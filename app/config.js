@@ -2,11 +2,12 @@
 let icons = require('./icons');
 
 const config = {
-    board_size: 24,
+    board_size: 20,
     cards_per_row: 4,
 
     icon_names: icons,
-    card_unturned: "oi oi-aperture text-primary",
+    card_hidden: "oi oi-aperture text-primary",
+    card_pair_found: "oi oi-check text-success",
 
     game_state_no_turned_card: 0,
     game_state_1_turned_card: 1,
@@ -14,7 +15,9 @@ const config = {
     game_state_game_over: 3,
 
     card_state_in_game: 0,
-    card_state_game_over: 1,
+    card_state_pair_found: 1,
+
+    turn_hidden_delay: 1000
 
 };
 

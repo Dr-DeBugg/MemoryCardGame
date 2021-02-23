@@ -3,7 +3,7 @@
 const {app, BrowserWindow} = require('electron')
 
 function createWindow (){
-    const wind = new BrowserWindow({
+    const window = new BrowserWindow({
         width: 800,
         height: 600,
         show: false,
@@ -12,12 +12,10 @@ function createWindow (){
         }
     })
 
-    wind.loadFile('app/index.html')
-
-    wind.webContents.openDevTools()
-
-    wind.once('ready-to-show', () => {
-        wind.show()
+    window.loadFile('app/index.html')
+    window.webContents.openDevTools()
+    window.once('ready-to-show', () => {
+        window.show()
     });
 }
 
