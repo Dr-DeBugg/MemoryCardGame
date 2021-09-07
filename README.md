@@ -1,5 +1,6 @@
 # MemoryCardGame
 An Electron based 'memory card game' app I produced using jQuery and Bootstrap libraries.
+
 ![Demo](https://github.com/Dr-DeBugg/MemoryCardGame/blob/master/Animation.gif)
 
 ## Screenshots:
